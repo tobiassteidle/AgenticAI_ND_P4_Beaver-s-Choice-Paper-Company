@@ -41,12 +41,6 @@ You can install all required packages using the provided requirements.txt file:
 
 `pip install -r requirements.txt`
 
-If you're using smolagents, install it separately:
-
-`pip install smolagents`
-
-For other options like pydantic-ai or npcsh[lite], refer to their documentation.
-
 2. Create .env File
 
 Add your OpenAI-compatible API key:
