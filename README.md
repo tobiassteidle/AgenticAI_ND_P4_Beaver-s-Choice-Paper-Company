@@ -16,7 +16,10 @@ project requirements.
 Please read through the provided [PROJECT_INSTRUCTIONS.md](PROJECT_INSTRUCTIONS.md) file for step-by-step guidance on
 how to complete the project.
 
-## SOLUTION DOCUMENTATION
+## Project Evaluation Criteria
+Please read through the provided [PROJECT_RUBRIK.md](PROJECT_RUBRIK.md) file to understand the evaluation criteria.
+
+## Solution Documentation
 
 Please read through the provided [SOLUTION_DOCUMENTATION.md](SOLUTION_DOCUMENTATION.md) file for a detailed description of
 the solution architecture, agent interactions, and design decisions made during the project.
