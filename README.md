@@ -1,18 +1,25 @@
 # Munder Difflin Multi-Agent System Project
 
-Welcome to the starter code repository for the **Munder Difflin Paper Company Multi-Agent System Project**! This repository contains the starter code and tools you will need to design, build, and test a multi-agent system that supports core business operations at a fictional paper manufacturing company.
+Welcome to the starter code repository for the **Munder Difflin Paper Company Multi-Agent System Project**! This
+repository contains the starter/-, solution-code and tools you will need to design, build, and test a multi-agent system that
+supports core business operations at a fictional paper manufacturing company.
 
-## Project Context
+---
 
-You’ve been hired as an AI consultant by Munder Difflin Paper Company, a fictional enterprise looking to modernize their workflows. They need a smart, modular **multi-agent system** to automate:
+## Project Overview
 
-- **Inventory checks** and restocking decisions
-- **Quote generation** for incoming sales inquiries
-- **Order fulfillment** including supplier logistics and transactions
+Please read through the provided [PROJECT_OVERVIEW.md](PROJECT_OVERVIEW.md) file for a detailed description of the
+project requirements.
 
-Your solution must use a maximum of **5 agents** and process inputs and outputs entirely via **text-based communication**.
+## Project Instructions
 
-This project challenges your ability to orchestrate agents using modern Python frameworks like `smolagents`, `pydantic-ai`, or `npcsh`, and combine that with real data tools like `sqlite3`, `pandas`, and LLM prompt engineering.
+Please read through the provided [PROJECT_INSTRUCTIONS.md](PROJECT_INSTRUCTIONS.md) file for step-by-step guidance on
+how to complete the project.
+
+## SOLUTION DOCUMENTATION
+
+Please read through the provided [SOLUTION_DOCUMENTATION.md](SOLUTION_DOCUMENTATION.md) file for a detailed description of
+the solution architecture, agent interactions, and design decisions made during the project.
 
 ---
 
@@ -27,9 +34,25 @@ From the `project.zip` starter archive, you will find:
 
 ---
 
+## Project Context
+
+You’ve been hired as an AI consultant by Munder Difflin Paper Company, a fictional enterprise looking to modernize their
+workflows. They need a smart, modular **multi-agent system** to automate:
+
+- **Inventory checks** and restocking decisions
+- **Quote generation** for incoming sales inquiries
+- **Order fulfillment** including supplier logistics and transactions
+
+Your solution must use a maximum of **5 agents** and process inputs and outputs entirely via **text-based communication
+**.
+
+This project challenges your ability to orchestrate agents using modern Python frameworks like `smolagents`,
+`pydantic-ai`, or `npcsh`, and combine that with real data tools like `sqlite3`, `pandas`, and LLM prompt engineering.
+
 ## Workspace Instructions
 
-All the files have been provided in the VS Code workspace on the Udacity platform. Please install the agent orchestration framework of your choice.
+All the files have been provided in the VS Code workspace on the Udacity platform. Please install the agent
+orchestration framework of your choice.
 
 ## Local setup instructions
 
@@ -51,7 +74,8 @@ This project uses a custom OpenAI-compatible proxy hosted at https://openai.voca
 
 ## How to Run the Project
 
-Start by defining your agents in the `"YOUR MULTI AGENT STARTS HERE"` section inside `template.py`. Once your agent team is ready:
+Start by defining your agents in the `"YOUR MULTI AGENT STARTS HERE"` section inside `template.py`. Once your agent team
+is ready:
 
 1. Run the `run_test_scenarios()` function at the bottom of the script.
 2. This will simulate a series of customer requests.
@@ -80,7 +104,7 @@ Output will include:
 
 Make sure to submit the following files:
 
-1. Your completed `template.py` or `project_solution.py` with all agent logic
+1. Your completed `template.py` or `project_starter.py` with all agent logic
 2. A **workflow diagram** describing your agent architecture and data flow
 3. A `README.txt` or `design_notes.txt` explaining how your system works
 4. Outputs from your test run (like `test_results.csv`)
