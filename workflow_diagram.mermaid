@@ -1,0 +1,72 @@
+lowchart TD
+  subgraph ORCH[Orchestrator Agent]
+    O1[Receive customer request]
+    O2[Analyze request]
+    O3[Delegate to responsible agent]
+  end
+
+  subgraph INV[Inventory Management Agent]
+    I1[get_all_inventory]
+    I2[get_stock_level]
+    I3[get_supplier_delivery_date]
+    I4[create_transaction for restocking]
+  end
+
+  subgraph QUOTE[Quote Agent]
+    Q1[search_quote_history]
+    Q2[generate_financial_report for pricing insights]
+  end
+
+  subgraph SALES[Sales Finalization Agent]
+    S1[get_stock_level]
+    S2[get_supplier_delivery_date]
+    S3[create_transaction for sales]
+  end
+
+  subgraph ADVISOR[Business Advisor Agent]
+    A1[generate_financial_report]
+    A2[get_cash_balance]
+    A3[search_quote_history]
+  end
+
+  O1 --> O2 --> O3
+
+  %% Request routing
+  O3 -->|Request: Inventory info| INV
+  O3 -->|Request: Generate quote| QUOTE
+  O3 -->|Request: Finalize sale| SALES
+  O3 -->|Request: Business insight| ADVISOR
+
+  %% Tool interactions
+  INV --> I1
+  INV --> I2
+  INV --> I3
+  INV --> I4
+
+  QUOTE --> Q1
+  QUOTE --> Q2
+
+  SALES --> S1
+  SALES --> S2
+  SALES --> S3
+
+  ADVISOR --> A1
+  ADVISOR --> A2
+  ADVISOR --> A3
+
+  %% Data flows
+  I1 -->|Inventory data| INV
+  I2 -->|Stock level| INV
+  I3 -->|Delivery date| INV
+  I4 -->|Stores restocking order| DB[(Database)]
+
+  Q1 -->|Quote history| QUOTE
+  Q2 -->|Financial data| QUOTE
+
+  S1 -->|Stock check| SALES
+  S2 -->|Delivery time estimate| SALES
+  S3 -->|Stores sales order| DB
+
+  A1 -->|Report summary| ADVISOR
+  A2 -->|Cash balance| ADVISOR
+  A3 -->|Sales trends| ADVISOR
