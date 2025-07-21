@@ -48,7 +48,6 @@ The Quote Agent creates competitive offers based on the customer's request and i
 Handles final order processing. It re-checks inventory, calculates expected delivery dates, and records the sale as a transaction in the database.
 
 **Tools used:**
-- `get_stock_level`
 - `get_supplier_delivery_date`
 - `create_transaction` (for sales)
 
