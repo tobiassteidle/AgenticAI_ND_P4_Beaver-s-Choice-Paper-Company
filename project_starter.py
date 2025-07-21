@@ -725,6 +725,11 @@ class OrchestrationClassification(BaseModel):
     classification: Literal["INQUIRY", "ORDER"]
 
 
+class InventoryResponse(BaseModel):
+    answer: str
+    proceed_with_order: bool
+
+
 # Define orchestration agent
 orchestration_agent = Agent(model="openai:gpt-4o",
                             name="Orchestration Agent",
@@ -788,14 +793,14 @@ inventor_agent = Agent(model="openai:gpt-3.5-turbo",
                         - If **stock is insufficient**, perform the following steps:
                             1. Use `create_transaction` to initiate a **restocking order**.
                             2. Use `get_supplier_delivery_date` to estimate **when the item will be available**.
-                            3. In your response, clearly inform the next agent that the material **has been reordered** and should be treated as **available** for quoting and sales purposes.                        
-                        - If the item is not available and no restocking order can be placed (e.g., due to system constraints), inform the customer that the item is currently unavailable and suggest alternatives if possible.
+                            3. In your response, clearly inform the next agent that the material **has been reordered**                            
                         ---
                         
                         ## Output Expectations:
                         - Be clear whether stock is sufficient or not.
-                        - If a restocking order was triggered, explicitly say:
-                          `"The item has been reordered and should now be treated as available for further processing."`
+                        - If a restocking order was triggered, explicitly check the expected delivery date and the answer from get_supplier_delivery_date:
+                          1. If the `get_supplier_delivery_date` is after the expected delivery date, response with proceed_with_order = False.
+                          2. Explain the situation to a customer and inform them that the order will be not fulfilled immediately.
                         
                         ---
                         
@@ -809,8 +814,20 @@ inventor_agent = Agent(model="openai:gpt-3.5-turbo",
                         
                         Always follow this decision logic.
                         Be accurate and concise.
+                        
+                        --- 
+                        ## Output Format:
+                                
+                        Return a JSON object using the following Pydantic schema:
+                                
+                        ```python
+                           class InventoryResponse(BaseModel):
+                             answer: str
+                             proceed_with_order: bool
+                        
                         """,
-                       tools=toolset_inventor_agent
+                       tools=toolset_inventor_agent,
+                       output_type=InventoryResponse
                        )
 
 # Define quoting agent
@@ -1047,10 +1064,15 @@ class MultiAgentWorkflow:
         )
         self.agent_usage_count["inventory"] += 1
 
+        if not inventory_response.output.proceed_with_order:
+            # If inventory agent indicates order cannot proceed, return a message
+            print(f"Order cannot be processed: {inventory_response.output.answer}")
+            return inventory_response.output.answer
+
         # Call quoting agent to generate a quote based on the order
         quote_prompt = f"""
             User Request: {context.original_request}
-            Inventory Context: {inventory_response.output}
+            Inventory Context: {inventory_response.output.answer}
         """
         quoting_response = self.agents["quoting"].run_sync(
             quote_prompt,
@@ -1061,7 +1083,7 @@ class MultiAgentWorkflow:
         # Call sales finalization agent to finalize the order
         sales_prompt = f"""
             User Request: {context.original_request}
-            Inventory Context: {inventory_response.output}
+            Inventory Context: {inventory_response.output.answer}
             Quote Context: {quoting_response.output}
         """
         sales_response = self.agents["sales"].run_sync(
@@ -1073,7 +1095,7 @@ class MultiAgentWorkflow:
         # Call invoice agent to generate an invoice for the order
         invoice_prompt = f"""
             User Request: {context.original_request}
-            Inventory Context: {inventory_response.output}
+            Inventory Context: {inventory_response.output.answer}
             Quote Context: {quoting_response.output}
             Sales Context: {sales_response.output}
         """
