@@ -1,0 +1,373 @@
+request_id,request_date,cash_balance,inventory_value,response
+1,2025-04-01,45059.7,5005.3,"The requested paper supplies have been reordered. Expected delivery dates: A4 glossy paper - April 5, 2025, Heavy cardstock - April 2, 2025, Colored paper - April 2, 2025."
+2,2025-04-03,45059.7,5070.3,"The items have been reordered. Expected delivery date for balloons: April 7, 2025. The order will not be fulfilled immediately."
+3,2025-04-04,45559.7,5570.3,"### 1. Friendly Response Text
+
+Thank you for your order with Munder Difflin! We are pleased to confirm your order of 10,000 sheets of A4 paper, 5,000 sheets of A3 paper, and 500 reams of printer paper. Your items will be delivered as scheduled: the printer paper by April 8, 2025, and the A4 and A3 paper by April 11, 2025. Please find your detailed invoice attached below. We appreciate your business and look forward to serving you again!
+
+### 2. Formatted Invoice (as plain text)
+
+```
+------------------------------------------------------------
+                    Munder Difflin Paper Co.
+------------------------------------------------------------
+Invoice No: INV-2025-001
+Date: 2025-04-04
+
+Bill To:
+Name: <placeholder>
+Address: <placeholder>
+Email: <placeholder>
+
+Items:
+Qty     Description           Unit Price    Line Total
+------------------------------------------------------------
+10,000  A4 Paper (sheets)     $0.05         $500.00
+5,000   A3 Paper (sheets)     $0.05         $250.00
+500     Printer Paper (reams) $3.00         $1,500.00
+
+------------------------------------------------------------
+Subtotal:                                  $2,250.00
+Discount:                                  $0.00
+Total Amount Due:                          $2,250.00
+
+Expected Delivery Dates:
+- Printer Paper: April 8, 2025
+- A4 & A3 Paper: April 11, 2025
+
+------------------------------------------------------------
+Thank you for your business!
+------------------------------------------------------------
+```
+
+Please let us know if there is anything else we can assist you with."
+4,2025-04-05,45559.7,5645.3,"The order for 500 sheets of high-quality, recycled cardstock and 250 sheets of A4 size printer paper has been placed for restocking. The expected delivery date is April 9, 2025. The order will not be fulfilled immediately."
+5,2025-04-05,45559.7,5740.3,"The items have been reordered. The expected delivery date is April 9, 2025. The order will not be fulfilled immediately."
+6,2025-04-06,45559.7,5820.3,"The items have been reordered. Expected delivery date for all items is April 10, 2025."
+7,2025-04-07,46039.7,6250.3,"### 1. Friendly Response Text
+
+Thank you for your order with Munder Difflin! We are pleased to confirm your order for various paper supplies, which will be delivered by April 14, 2025, just in time for your exhibition on April 15, 2025. Please find your detailed invoice attached below. We appreciate your business and look forward to serving you again.
+
+### 2. Formatted Invoice
+
+```
+------------------------------------------------------------
+                    MUNDER DIFFLIN PAPER CO.
+------------------------------------------------------------
+Invoice No: INV-2025-001
+Date: 2025-04-07
+
+Bill To:
+Name: <placeholder>
+Address: <placeholder>
+Email: <placeholder>
+
+Items:
+Qty   Description                  Unit Price   Line Total
+------------------------------------------------------------
+500   Glossy A4 Paper              $0.20        $100.00
+1000  Matte A3 Paper               $0.05        $50.00
+300   Poster Boards (24"" x 36"")    $1.00        $300.00
+200   Heavyweight Cardstock        $0.15        $30.00
+
+------------------------------------------------------------
+Subtotal:                                       $480.00
+Discount (applied to A3 Paper):                 $0.00
+Total Amount Due:                               $480.00
+
+Expected Delivery Date: April 14, 2025
+
+------------------------------------------------------------
+Thank you for your business!
+------------------------------------------------------------
+```
+
+Please let us know if you have any questions or need further assistance."
+8,2025-04-07,46139.7,6550.3,"### 1. Friendly Response Text
+
+Thank you for your order with Munder Difflin! We are pleased to confirm your purchase of various paper supplies for your upcoming ceremony. Your order will be delivered by April 15, 2025, as requested. Please find the detailed invoice attached below.
+
+### 2. Formatted Invoice
+
+```
+------------------------------------------------------------
+                     Munder Difflin Paper Co.
+------------------------------------------------------------
+Invoice No: INV-2025-001
+Date: 2025-04-07
+
+Bill To:
+Name: <placeholder>
+Address: <placeholder>
+Email: <placeholder>
+
+Items:
+Qty   Description              Unit Price   Line Total
+------------------------------------------------------------
+500   A4 Glossy Paper          $0.20        $100.00
+1000  A4 Matte Paper           $0.05        $50.00
+2000  A5 Colored Paper         $0.10        $200.00
+3000  A4 Recycled Paper        $0.05        $150.00
+
+Subtotal:                                   $500.00
+Volume Discount (5%):                       -$25.00
+Total Amount Due:                           $475.00
+
+Expected Delivery Date: April 15, 2025
+
+------------------------------------------------------------
+Thank you for your business!
+We look forward to serving you again.
+------------------------------------------------------------
+```
+
+Note: The volume discount of 5% has been applied to your order, reducing the total amount due to $475.00."
+9,2025-04-07,46139.7,6560.3,"The requested paper supplies have been reordered. Expected delivery dates: A4 paper - April 11, 2025, A3 glossy paper - April 8, 2025, 100% recycled kraft paper envelopes - April 8, 2025."
+13,2025-04-08,46139.9,6585.3,"### 1. Friendly Response Text
+
+Thank you for your order of 500 sheets of A4 printing paper and 200 sheets of cardstock for your upcoming gathering. We are pleased to confirm that your order will be delivered on April 12, 2025. Please find the detailed invoice attached below. We appreciate your business and look forward to serving you again in the future.
+
+### 2. Formatted Invoice (as plain text)
+
+```
+------------------------------------------------------------
+                      Munder Difflin Paper Supply Co.
+------------------------------------------------------------
+Invoice No: INV-2025-001
+Date: 2025-04-08
+
+Bill To:
+Name: <placeholder>
+Address: <placeholder>
+Email: <placeholder>
+
+Items:
+Qty   Description              Unit Price   Line Total
+------------------------------------------------------------
+500   A4 Printing Paper        $0.05        $25.00
+200   Cardstock                $0.15        $30.00
+
+------------------------------------------------------------
+Subtotal:                                  $55.00
+Discount:                                  $0.00
+Total Amount Due:                          $55.00
+
+Expected Delivery Date: April 12, 2025
+
+------------------------------------------------------------
+Thank you for your business!
+------------------------------------------------------------
+```
+
+Please let us know if there are any further questions or if you need additional assistance."
+12,2025-04-08,46139.9,6615.3,"The items have been reordered. Expected delivery dates: Colorful cardstock - April 12, 2025, Standard printer paper - April 12, 2025, Paper napkins - April 9, 2025."
+10,2025-04-08,46139.9,6660.3,"The items have been reordered. Expected delivery date for both items is April 12, 2025."
+11,2025-04-08,46254.9,6660.3,"### 1. Friendly Response Text
+
+Thank you for your order with Munder Difflin! We are pleased to confirm your purchase of 500 sheets of A3 Glossy Paper and 300 sheets of A4 Matte Paper. Your order is scheduled for delivery by April 12, 2025, ensuring you have everything you need for your exhibition. Please find your invoice attached below.
+
+### 2. Formatted Invoice
+
+```
+------------------------------------------------------------
+                       MUNDER DIFFLIN
+                      PAPER SUPPLY CO.
+------------------------------------------------------------
+Invoice No: INV-2025-001
+Date: 2025-04-08
+
+Bill To:
+Name: <placeholder>
+Address: <placeholder>
+Email: <placeholder>
+
+Items:
+Qty   Description             Unit Price   Line Total
+------------------------------------------------------------
+500   A3 Glossy Paper         $0.20        $100.00
+300   A4 Matte Paper          $0.05        $15.00
+------------------------------------------------------------
+Subtotal:                                   $115.00
+Discount:                                   $0.00
+Total Amount Due:                           $115.00
+
+Expected Delivery Date: April 12, 2025
+
+------------------------------------------------------------
+Thank you for your business!
+We appreciate your trust in Munder Difflin.
+------------------------------------------------------------
+```
+"
+14,2025-04-09,46254.9,8985.300000000001,"The materials have been reordered. The expected delivery date for the items is April 16, 2025. The order will not be fulfilled immediately."
+15,2025-04-12,46254.9,9560.300000000001,"The items have been reordered. The expected delivery date for the supplies is April 19, 2025. The order will not be fulfilled immediately."
+16,2025-04-13,46399.9,9560.300000000001,"### 1. Friendly Response Text
+
+Dear Valued Customer,
+
+Thank you for placing your order with Munder Difflin Paper Supply Company. We are pleased to confirm your order for 500 sheets of A4 printer paper, 200 sheets of colorful construction paper, and 100 sheets of poster board. The A4 printer paper and colorful construction paper will be delivered immediately, and the poster board will arrive by April 14, 2025, just in time for your assembly event.
+
+Please find your invoice attached below. We appreciate your business and look forward to serving you again.
+
+Warm regards,
+
+Munder Difflin Paper Supply Company
+
+---
+
+### 2. Formatted Invoice (as plain text)
+
+```
+------------------------------------------------------------
+                      Munder Difflin Paper Supply Company
+------------------------------------------------------------
+
+Invoice No: INV-2025-001
+Date: 2025-04-13
+
+Bill To:
+Name: <placeholder>
+Address: <placeholder>
+Email: <placeholder>
+
+------------------------------------------------------------
+Items:
+Qty   Description                   Unit Price   Line Total
+------------------------------------------------------------
+500   A4 Printer Paper              $0.05        $25.00
+200   Colorful Construction Paper   $0.10        $20.00
+100   Poster Board                  $1.00        $100.00
+------------------------------------------------------------
+Subtotal:                                        $145.00
+Discount:                                        $0.00
+Total Amount Due:                                $145.00
+
+Expected Delivery Date: 
+- A4 Printer Paper and Colorful Construction Paper: Immediate
+- Poster Board: April 14, 2025
+
+------------------------------------------------------------
+Thank you for your business!
+------------------------------------------------------------
+```"
+17,2025-04-14,46399.9,9610.300000000001,"The requested items have been reordered. The estimated delivery dates are as follows: A4 white printer paper by April 18, 2025, A3 colored paper by April 18, 2025, table napkins by April 21, 2025, paper cups by April 18, 2025, and paper plates by April 18, 2025."
+18,2025-04-14,46400.270000000004,9705.300000000001,"### 1. Friendly Response Text
+
+Thank you for your order! We are pleased to confirm that your order for 500 sheets of high-quality white cardstock, 1000 sheets of standard printing paper, and 200 sheets of colored paper has been successfully placed. While we understand you requested delivery by April 15, 2025, please note that the estimated delivery date is April 21, 2025. We apologize for any inconvenience this may cause and appreciate your understanding. An invoice is attached below for your records.
+
+### 2. Formatted Invoice
+
+```
+------------------------------------------------------------
+                      Munder Difflin Paper Supply Co.
+------------------------------------------------------------
+Invoice No: INV-2025-001
+Date: 2025-04-14
+
+Bill To:
+Name: <placeholder>
+Address: <placeholder>
+Email: <placeholder>
+
+Items:
+Qty   Description                   Unit Price   Line Total
+------------------------------------------------------------
+500   High-Quality White Cardstock  $0.20        $100.00
+1000  Standard Printing Paper       $0.05        $50.00
+200   Colored Paper                 $0.12        $24.00
+
+Subtotal:                                      $174.00
+Discount (5%):                                 -$8.70
+------------------------------------------------------------
+Total Amount Due:                              $165.30
+
+Expected Delivery Date: 2025-04-21
+
+Thank you for your business!
+------------------------------------------------------------
+```
+
+Please let us know if you have any questions or need further assistance. We look forward to serving you again soon!"
+19,2025-04-15,47325.270000000004,9705.300000000001,"### 1. Friendly Response Text
+
+Dear Valued Customer,
+
+Thank you for choosing Munder Difflin for your paper supply needs. We are pleased to confirm your order for 2000 sheets of A4 Glossy Paper, 1500 sheets of A3 Matte Paper, and 1000 sheets of Cardstock in assorted colors. Please note that the A4 Glossy Paper and A3 Matte Paper will be delivered by April 22, 2025, and the Cardstock will be delivered by April 19, 2025.
+
+An invoice for your order is attached below. We appreciate your business and look forward to serving you again in the future.
+
+Best regards,
+Munder Difflin Sales Team
+
+### 2. Formatted Invoice (as plain text)
+
+```
+------------------------------------------------------------
+                      MUNDER DIFFLIN
+                     PAPER SUPPLY CO.
+------------------------------------------------------------
+Invoice No: INV-2025-001
+Date: 2025-04-15
+
+Bill To:
+Name: <placeholder>
+Address: <placeholder>
+Email: <placeholder>
+
+Items:
+Qty   Description             Unit Price   Line Total
+------------------------------------------------------------
+2000  A4 Glossy Paper         $0.20        $400.00
+1500  A3 Matte Paper          $0.25        $375.00
+1000  Cardstock (assorted)    $0.15        $150.00
+
+Subtotal:                                   $925.00
+Discount (5%):                              -$46.25
+------------------------------------------------------------
+Total Amount Due:                           $878.75
+
+Expected Delivery Dates:
+- Cardstock: April 19, 2025
+- A4 Glossy Paper & A3 Matte Paper: April 22, 2025
+
+Thank you for your business!
+------------------------------------------------------------
+```
+"
+20,2025-04-17,50225.270000000004,9955.300000000001,"### 1. Friendly Response Text
+
+Thank you for your order of concert paper supplies for the upcoming event. We are pleased to confirm your order of 5,000 flyers, 2,000 posters, and 10,000 tickets. Your items are scheduled to be delivered by May 1, 2025, well before your required date of May 15, 2025. An invoice is attached below for your records. We appreciate your business and look forward to serving you in the future.
+
+### 2. Formatted Invoice (as plain text)
+
+```
+------------------------------------------------------------
+                      Munder Difflin Paper Supply Co.
+------------------------------------------------------------
+Invoice No: INV-2025-001
+Date: 2025-04-17
+
+Bill To:
+Name: <placeholder>
+Address: <placeholder>
+Email: <placeholder>
+
+Items:
+Qty     Description      Unit Price    Line Total
+------------------------------------------------------------
+5,000   Flyers           $0.08         $400.00
+2,000   Posters          $1.00         $2,000.00
+10,000  Tickets          $0.05         $500.00
+
+Subtotal:                              $2,900.00
+Discount (Volume):                     -$0.00
+Total Amount Due:                      $2,900.00
+
+Expected Delivery Date: May 1, 2025
+
+------------------------------------------------------------
+Thank you for your business!
+------------------------------------------------------------
+```
+
+Please let us know if you need any further assistance or if there are any changes to your order."
