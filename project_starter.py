@@ -1108,7 +1108,7 @@ class MultiAgentWorkflow:
         # Return the final response from the sales agent
         return invoice_response.output
 
-    def run(self, customer_request: str, max_iterations: int = 5) -> str:
+    def run(self, customer_request: str) -> str:
         """
         Run the multi-agent workflow for a given customer request.
         This method orchestrates the agents to handle the request and return a response.
